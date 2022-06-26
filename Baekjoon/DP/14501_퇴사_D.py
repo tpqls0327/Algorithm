@@ -10,5 +10,6 @@ for i in range(n-1, -1, -1):
         max_[i] = max_[i+1]
     else:
         max_[i] = max(max_[i+1], arr[i][1] + max_[i + arr[i][0]])
+    print(max_)
 
 print(max_[0])

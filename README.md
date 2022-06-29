@@ -8,6 +8,9 @@
   
 이전 깃허브: [@DailyCoding](https://github.com/ALGO-LEARN/DailyCoding)
 
+이코테 책이 끝나고 나서 이어서 할 문제들:[@백준문제 모음 깃허브] (https://github.com/encrypted-def/basic-algo-lecture/blob/master/workbook.md)
+  
+
 ## 참여자
 * 유세빈 - 백준풀이 이니셜: S [@tpqls0327](https://github.com/tpqls0327)
 * 신동원 - 백준풀이 이니셜: D [@ponopono0322](https://github.com/ponopono0322)

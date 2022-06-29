@@ -12,6 +12,6 @@ for i in range(n-1, -1, -1):
         dp[i] = max(data[i][1] + dp[i + data[i][0]], dp[i+1])
     else:
         dp[i] = dp[i+1]
-
+print(dp)
 print(dp[0])
             

@@ -8,7 +8,7 @@ n = int(input())
 for _ in range(n):
     l_list = []
     r_list = []
-    data = input()
+    data = list(input())
     
     for i in data:
         if i == '-':

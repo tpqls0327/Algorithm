@@ -13,9 +13,12 @@ for i in range(n):
             ice.append([i, j])
     board.append(tmp)
 
-cnt = 0
+days = 0
 while ice:
+    days += 1
     ice_tmp = deque()
+
+    # 녹아야 할 빙산량 계산
     while ice:
         x, y = ice.popleft()
         ice_cnt = 0
@@ -26,10 +29,7 @@ while ice:
                 ice_cnt += 1
         ice_tmp.append([x, y, ice_cnt])
 
-    cnt += 1
-    visited = [[0] * m for _ in range(n)]
-    block = 0
-
+    # 빙산 녹이기
     while ice_tmp:
         i, j, c = ice_tmp.popleft()
         if board[i][j] - c > 0:
@@ -38,6 +38,9 @@ while ice:
         else:
             board[i][j] = 0
 
+    # 쪼개진 빙산 검사
+    block = 0
+    visited = [[0] * m for _ in range(n)]
     for i, j in ice:
         if not visited[i][j] and board[i][j]:
             block += 1
@@ -56,4 +59,4 @@ while ice:
     if block >= 2:
         break
 
-print(cnt if ice else 0)
+print(days if ice else 0)

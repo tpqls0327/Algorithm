@@ -1,10 +1,7 @@
 # 14499 주사위 굴리기
 
 n,m,x,y,k = map(int,input().split())
-arr = []
-for _ in range(n):
-    tmp = list(map(int,input().split()))
-    arr.append(tmp)
+arr = [list(map(int, input().split())) for _ in range(n)]
 move = list(map(int, input().split()))
 dice = [0,0,0,0,0,0]   # 1,2,3,4,5,6 | 상앞우좌뒤하
 dx,dy = (0,0,-1,1), (1,-1,0,0) # 동서북남

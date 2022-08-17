@@ -8,4 +8,4 @@ for _ in range(n):
 
 for i in range(1, 51):
     if dic[i]:
-        print('\n'.join(sorted(list(dic[i]))))
+        print(*sorted(dic[i]), sep='\n')

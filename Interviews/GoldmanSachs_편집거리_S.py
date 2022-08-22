@@ -2,6 +2,7 @@
 
 def edit_dist(str1, str2):
     dp = [[0] * (len(str2)+1) for _ in range(len(str1) + 1)]
+    print(dp)
     for i in range(1, len(str1)+1):
         dp[i][0] = i
     for j in range(1, len(str2)+1):

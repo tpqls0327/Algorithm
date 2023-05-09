@@ -27,7 +27,7 @@ while True:
         continue
     
     if stack[idx] == tmp_stack[-1]:
-        data = tmp_stack.pop()
+        tmp_stack.pop()
         idx += 1
         result.append('-')
     else:
